@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="th">
+    <div id="box">
+    <input type="text" id="res" readonly></div>
+    <div>
+    <table>
+        <tr>
+            <td><Button onclick="append(7)">7</Button></td>
+            <td><Button onclick="append(8)">8</Button></td>
+            <td><Button onclick="append(9)">9</Button></td>
+            <td><Button onclick="operate('+')">+</Button></td>
+        </tr>
+        <tr>
+            <td><Button onclick="append(4)">4</Button></td>
+            <td><Button onclick="append(5)">5</Button></td>
+            <td><Button onclick="append(6)">6</Button></td>
+            <td><Button onclick="operate('-')">-</Button></td>
+        </tr>
+        <tr>
+            <td><Button onclick="append(1)">1</Button></td>
+            <td><Button onclick="append(2)">2</Button></td>
+            <td><Button onclick="append(3)">3</Button></td>
+            <td><Button onclick="operate('*')">*</Button></td>
+        </tr>
+        <tr>
+            <td><Button onclick="clearresult()">c</Button></td>
+            <td><Button onclick="append(0)">0</Button></td>
+            <td><Button onclick="calculate()">=</Button></td>
+            <td><Button onclick="operate('/')">/</Button></td>
+        </tr>
+    </table>
+</div>
+</section>
+</body>
+<audio id="btnSound" src="WhatsApp Audio 2025-08-12 at 12.31.11_c5576ef1.mp3" preload="auto"></audio>
+<script src="indexdc.js"></script>
+</html>

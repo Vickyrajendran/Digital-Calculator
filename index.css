@@ -1,0 +1,108 @@
+ body {
+    background-color: aquamarine;
+    justify-content: center;
+    margin-left: 550px;
+    padding-top: 200px;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1.5s ease-in-out; 
+    background-image: url(98909f1d954f3335e9c8cd09265c2fd2.jpg);
+}
+button {
+    padding: 40px;
+    font-size: 1rem;
+    margin-left: 4px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: popIn 0.8s ease forwards;
+    cursor: pointer;
+}
+
+button:hover {
+    color: yellow;
+    background-color:blue;
+    transform: scale(1.1) rotate(1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+#th {
+    border-style: solid;
+    border-color: aliceblue;
+    margin-left: 90px;
+    padding: 10px;
+    margin-right: 430px;
+    border-radius: 10px;
+    animation: slideDown 1s ease-in-out;
+}
+#box {
+    margin-left: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+input {
+    padding: 40px;
+    border-radius: 20px;
+    padding-right: 180px;
+    margin-left: -5px;
+    border: 2px solid #333;
+    animation: fadeInUp 1.2s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+    
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+@keyframes bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(0.9); }
+    60% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+button {
+    padding: 40px;
+    font-size: 1rem;
+    margin-left: 4px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: popIn 0.8s ease forwards, float 3s ease-in-out infinite;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, pink, royalblue, pink);
+    background-size: 200% 100%;
+}
+button:hover {
+    color: yellow;
+    transform: scale(1.1) rotate(1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite, shimmer 1.5s linear infinite;
+}
+button:active {
+    animation: bounce 0.4s ease;
+}
+
